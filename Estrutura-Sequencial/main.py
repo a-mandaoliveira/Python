@@ -29,6 +29,7 @@ Escolha uma das opções abaixo:
         print("Você receberá: R$",salario_receber)
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "2":
+        os.system('cls')
         while True:
             numero=float(input("Digite um número positivo e maior que 0: "))
             if numero<=0:
@@ -38,11 +39,21 @@ Escolha uma das opções abaixo:
                 numero_raiz=numero**0.5
                 print(f"{numero}²= {numero_quadrado}\n√{numero}= {numero_raiz}")
                 break
-
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "3":
-        
+        os.system('cls')
 
+        racao_total_kg=float(input("Quantidade de ração(kg): "))
+        qntd_gato1=float(input("Quantidade de ração para o primeiro animal(g): "))
+        qntd_gato2=float(input("Quantidade de ração para o segundo animal(g): "))
+        
+        racao_total_g=racao_total_kg*1000
+        racao_gastada=qntd_gato1+qntd_gato2
+        racao_gastada_5dias=racao_gastada*5
+        racao_restante_g=racao_total_g - racao_gastada_5dias
+        racao_restante_kg=racao_restante_g/1000
+
+        print(f"Após 5 dias, restará: {racao_restante_kg}kg")
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "4":
         
