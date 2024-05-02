@@ -97,7 +97,15 @@ Escolha uma das opções abaixo:
 
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "7":
-        
+        os.system('cls')
+
+        altura_comodo=float(input("Altura do cômodo(m): "))
+        largura_comodo=float(input("Largura do cômodo(m): "))
+
+        area_comodo=altura_comodo*largura_comodo
+        potencia_iluminacao=area_comodo*18
+
+        print(f"Área do cômodo: {area_comodo}m² \nPotência da iluminação: {potencia_iluminacao}W")
         
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     else:
