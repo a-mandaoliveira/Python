@@ -17,10 +17,16 @@ Escolha uma das opções abaixo:
 ''')
 
     if menu not in ["1","2","3","4","5","6""7","8"]:
+        print("OPÇÃO INVÁLIDA")
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "1":
-        
-
+        horas_trabalhadas=int(input("Horas Trabalhadas: "))
+        salario_minimo=float(input("Salário Mínimo: "))
+        valor_hr=salario_minimo/2
+        salario_bruto=horas_trabalhadas*valor_hr
+        imposto=salario_bruto*0.03
+        salario_receber=salario_bruto-imposto
+        print("Você receberá: R$",salario_receber)
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "2":
 
