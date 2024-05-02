@@ -56,7 +56,14 @@ Escolha uma das opções abaixo:
         print(f"Após 5 dias, restará: {racao_restante_kg}kg")
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "4":
-        
+        os.system('cls')
+        nota1=float(input("Primeira nota: "))
+        nota2=float(input("Segunda nota: "))
+        nota3=float(input("Terceira nota: "))
+
+        media_ponderada=(nota1*2+nota2*3+nota3*5)/10
+
+        print(f"A média ponderada das suas notas é: {media_ponderada}")
 
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "5":
