@@ -20,6 +20,8 @@ Escolha uma das opções abaixo:
         print("OPÇÃO INVÁLIDA")
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "1":
+        os.system('cls')
+
         horas_trabalhadas=int(input("Horas Trabalhadas: "))
         salario_minimo=float(input("Salário Mínimo: "))
         valor_hr=salario_minimo/2
@@ -57,6 +59,7 @@ Escolha uma das opções abaixo:
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "4":
         os.system('cls')
+
         nota1=float(input("Primeira nota: "))
         nota2=float(input("Segunda nota: "))
         nota3=float(input("Terceira nota: "))
@@ -67,7 +70,15 @@ Escolha uma das opções abaixo:
 
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "5":
-        
+        os.system('cls')
+
+        custo_espetaculo=float(input("Custo total do espetáculo: "))
+        preco_convite=float(input("Preço do convite: "))
+
+        quantidade_convite=custo_espetaculo/preco_convite
+        convite_arredondado=round(quantidade_convite)
+
+        print(f"Será necessário vender: {convite_arredondado} convites")
         
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "6":
