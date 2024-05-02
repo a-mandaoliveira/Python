@@ -29,7 +29,15 @@ Escolha uma das opções abaixo:
         print("Você receberá: R$",salario_receber)
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "2":
-
+        while True:
+            numero=float(input("Digite um número positivo e maior que 0: "))
+            if numero<=0:
+                print("DIGITE UM NÚMERO >POSITIVO E MAIOR QUE ZERO<")
+            else:
+                numero_quadrado=numero**2
+                numero_raiz=numero**0.5
+                print(f"{numero}²= {numero_quadrado}\n√{numero}= {numero_raiz}")
+                break
 
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "3":
