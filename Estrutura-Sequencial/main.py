@@ -16,7 +16,7 @@ Escolha uma das opções abaixo:
 [8] Sair         
 ''')
 
-    if menu not in ["1","2","3","4","5","6""7","8"]:
+    if menu not in ["1","2","3","4","5","6","7","8"]:
         print("OPÇÃO INVÁLIDA")
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "1":
@@ -82,7 +82,18 @@ Escolha uma das opções abaixo:
         
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "6":
-        
+        os.system('cls')
+
+        salario_total=float(input("Salário total: "))
+        conta1=float(input("Primeira conta a ser paga: "))
+        conta2=float(input("Segunda conta a ser paga: "))
+
+        conta1_multa=conta1*1.02
+        conta2_multa=conta2*1.02
+        total_pagar=conta1_multa+conta2_multa
+        salario_restante=salario_total-total_pagar
+
+        print(f"Total a ser pago: {total_pagar} \nSalário restante: {salario_restante}") 
 
         input("PRESSIONE ENTER PARA VOLTAR AO MENU")
     elif menu == "7":
